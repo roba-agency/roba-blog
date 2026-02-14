@@ -1,0 +1,39 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="stylesheet" href="/styles/post/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Delicious+Handrawn&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar-desktop">
+            <a href="/" class="navbar-desktop-logo">roba <span class="navbar-desktop-logo-thin">blog</span></a>
+            <div class="navbar-desktop-links">
+                <div class="navbar-desktop-socials-container">
+                    <a class="navbar-desktop-socials">socials ▾</a>
+                    <div class="navbar-desktop-socials-dropdown">
+                        <a href="https://www.threads.com/@roba_agency" target="_blank">threads</a>
+                        <a href="https://www.trustpilot.com/review/roba.agency" target="_blank">trustpilot</a>
+                    </div>
+                </div>
+                <a href="https://store.roba.agency">merch</a>
+            </div>
+        </nav>
+
+        <div class="post-container">
+            <div class="post-info">
+                <img class="post-info-banner" src="{{ page.banner }}">
+                <h1 class="post-info-title">{{ page.title }}</h1>
+            </div>
+
+            <div class="post-content">
+                {{ content }}
+            </div>
+        </div>
+    </body>
+</html>

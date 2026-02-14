@@ -1,0 +1,96 @@
+.navbar-desktop{
+    margin: 1.8em 0 0 0;
+    /* background-color: #3232321a; */
+    background-color: rgba(100, 100, 100, 0.1);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2), -1px -1px 2px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px 5px 20px;
+    border-radius: 1000px;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1500px;
+    box-sizing: border-box;
+
+    z-index: 100000;
+}
+
+.navbar-desktop-logo{
+    font-weight: 500;
+    font-size: 2.75rem;
+    letter-spacing: -1.5px;
+}
+
+.navbar-desktop-logo-thin{
+    font-weight: 300;
+}
+
+.navbar-desktop-links{
+    display: flex;
+    gap: 25px;
+    font-size: 1.7rem;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-desktop-button{
+    border: 1px solid white;
+    border-radius: 1000px;
+    background-color: rgba(217, 217, 217, 0.1);
+    padding: 5px 10px 5px 10px;
+}
+
+.navbar-desktop-button:hover{
+    background-color: rgba(217, 217, 217, 0.2);
+}
+
+
+.navbar-desktop-socials-container {
+    position: relative;
+}
+
+.navbar-desktop-socials{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar-desktop-socials-dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(10, 10, 10);
+    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2), -1px -1px 2px rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px 0;
+    border-radius: 20px;
+    min-width: 160px;
+    z-index: 100;
+    top: 65px;
+}
+
+
+.navbar-desktop-socials-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 6px;
+    transition: background 0.2s;
+
+}
+
+.navbar-desktop-socials-container:hover .navbar-desktop-socials-dropdown,
+.navbar-desktop-socials-dropdown:hover {
+    display: block;
+}

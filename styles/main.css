@@ -1,0 +1,95 @@
+@import url("navbar/desktop.css") screen and (min-width: 981px);
+@import url("navbar/mobile.css") screen and (max-width: 981px);
+
+
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+}
+
+body{
+    background: linear-gradient(145.9deg, #000000 13.71%, #0b0020 95.38%), linear-gradient(176.53deg, #000000 11.13%, #0b0020 66.91%);
+    font-family: 'Space Grotesk', monospace;
+    color: #fff;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer{
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+
+    gap: 200px;
+    padding: 70px 60px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    
+    gap: 20px;
+}
+
+.footer-column-title{
+    color: #000;
+    font-weight: 600;
+    font-size: 44px;
+    letter-spacing: -7%;
+}
+
+.footer-column-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column-text{
+    color: #000;
+    font-size: 44px;
+    letter-spacing: -7%;
+}
+
+
+
+.footer-bottom{
+    color: #F2E8FF;
+    font-weight: 600;
+    font-size: 220px;
+    letter-spacing: -7%;
+    text-align: center;
+    
+    margin-bottom: -100px;
+}
+
+@media screen and (max-width: 981px) {
+    .footer-column-text{
+        letter-spacing: -3px;
+    }
+
+
+    .footer-bottom{
+        font-weight: 600;
+        font-size: 150px;
+        letter-spacing: -10px;
+        
+        margin-bottom: -60px;
+    }
+}
