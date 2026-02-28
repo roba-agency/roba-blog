@@ -39,10 +39,6 @@
     position: relative;
 }
 
-.navbar-desktop-button{
-    display: none;
-}
-
 .navbar-desktop-theme-container {
     position: relative;
 }
@@ -55,25 +51,81 @@
 .navbar-desktop-theme-dropdown {
     display: none;
     position: absolute;
-    background-color: rgba(15, 15, 15);
-    box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.15);
-    filter: drop-shadow(1px -1px 4px rgba(255, 255, 255, 0.1));
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 30px 10px;
-    border-radius: 30px;
-    min-width: 160px;
+    background-color: var(--bg-colour);
+    box-shadow: 1px 1px 2px #ffffff20, -1px -1px 2px #ffffff40;
+    padding: 10px 0;
+    border-radius: 35px;
     z-index: 100;
-    top: 120px;
+    top: 65px;
     right: 0;
 }
 
 
-.navbar-desktop-theme-dropdown {
-
-}
 
 .navbar-desktop-theme-container:hover .navbar-desktop-theme-dropdown,
 .navbar-desktop-theme-dropdown:hover {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px 10px;
+}
+
+.navbar-theme-right{
+    width: 225px;
+    height: auto;
+    border-radius: 25px;
+    background: var(--bg-colour);
+    color: var(--text-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-theme-right-preview{
+    font-size: 20px;
+    letter-spacing: -6%;
+    text-align: center;
+}
+
+.navbar-theme-left{
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.navbar-theme-title{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.navbar-theme-colour-options{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.navbar-theme-font-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.navbar-theme-font-option{
+    font-size: 16px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #7b7b7b20;
+    border-radius: 15px;
+    padding: 5px;
+
+    cursor: pointer;
 }
