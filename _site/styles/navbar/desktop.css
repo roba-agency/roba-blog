@@ -41,56 +41,95 @@
     font-size: 1.7rem;
     align-items: center;
     position: relative;
-}
+} 
 
-.navbar-desktop-button{
-    border: 1px solid white;
-    border-radius: 1000px;
-    background-color: rgba(217, 217, 217, 0.1);
-    padding: 5px 10px 5px 10px;
-}
-
-.navbar-desktop-button:hover{
-    background-color: rgba(217, 217, 217, 0.2);
-}
-
-
-.navbar-desktop-socials-container {
+.navbar-desktop-theme-container {
     position: relative;
 }
 
-.navbar-desktop-socials{
+.navbar-desktop-theme{
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.navbar-desktop-socials-dropdown {
+.navbar-desktop-theme-dropdown {
     display: none;
     position: absolute;
-    background-color: rgba(10, 10, 10);
-    box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2), -1px -1px 2px rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color: var(--bg-colour);
+    box-shadow: 1px 1px 2px #ffffff20, -1px -1px 2px #ffffff40;
     padding: 10px 0;
-    border-radius: 20px;
-    min-width: 160px;
+    border-radius: 35px;
     z-index: 100;
     top: 65px;
+    right: 0;
 }
 
 
-.navbar-desktop-socials-dropdown a {
-    display: block;
-    padding: 10px 20px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.1em;
-    border-radius: 6px;
-    transition: background 0.2s;
+
+.navbar-desktop-theme-container:hover .navbar-desktop-theme-dropdown,
+.navbar-desktop-theme-dropdown:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px 10px;
+}
+
+.navbar-theme-right{
+    width: 225px;
+    height: auto;
+    border-radius: 25px;
+    background: var(--bg-colour);
+    color: var(--text-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-theme-right-preview{
+    font-size: 20px;
+    letter-spacing: -6%;
+    text-align: center;
+}
+
+.navbar-theme-left{
+    padding: 10px;
+    box-sizing: border-box;
 
 }
 
-.navbar-desktop-socials-container:hover .navbar-desktop-socials-dropdown,
-.navbar-desktop-socials-dropdown:hover {
-    display: block;
+.navbar-theme-title{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.navbar-theme-colour-options{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.navbar-theme-font-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.navbar-theme-font-option{
+    font-size: 16px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #7b7b7b20;
+    border-radius: 15px;
+    padding: 5px;
+
+    cursor: pointer;
 }

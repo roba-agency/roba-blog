@@ -59,6 +59,13 @@
     align-self: center;
 }
 
+.home-post-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .home-post-img{
     width: 500px;
     height: auto;
@@ -73,6 +80,7 @@
     margin-bottom: 5px;
 }
 
+
 .home-post-preview{
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
     -webkit-background-clip: text;
@@ -81,6 +89,15 @@
 
     letter-spacing: -7%;
     line-height: 90%;
+}
+
+.home-post-date{
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.home-post-item:hover .home-post-date{
+    opacity: 100;
 }
 
 .home-post-item:nth-child(odd):after {

@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/styles/main.css">
         <link rel="stylesheet" href="/styles/index/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Delicious+Handrawn&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
@@ -13,14 +14,29 @@
         <nav class="navbar-desktop">
             <a href="/" class="navbar-desktop-logo">roba <span class="navbar-desktop-logo-thin">blog</span></a>
             <div class="navbar-desktop-links">
-                <div class="navbar-desktop-socials-container">
-                    <a class="navbar-desktop-socials">socials ▾</a>
-                    <div class="navbar-desktop-socials-dropdown">
-                        <a href="https://www.threads.com/@roba_agency" target="_blank">threads</a>
-                        <a href="https://www.trustpilot.com/review/roba.agency" target="_blank">trustpilot</a>
+                <div class="navbar-desktop-theme-container">
+                    <a class="navbar-desktop-theme">theme ▾</a>
+                    <div class="navbar-desktop-theme-dropdown">
+                        <div class="navbar-theme-left">
+                            <div class="navbar-theme-colour">
+                                <p class="navbar-theme-title navbar-theme-colour-title">Theme:</p>
+                                <div class="navbar-theme-colour-options">
+
+                                </div>
+                            </div>  
+                            <div class="navbar-theme-font">
+                                <p class="navbar-theme-title navbar-theme-font-title">Font:</p>
+
+                                <div id="navbar-theme-font-container" class="navbar-theme-font-container">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navbar-theme-right">
+                            <p class="navbar-theme-right-preview">This is a preview of what your text will look like</p>
+                        </div>
                     </div>
                 </div>
-                <a href="https://store.roba.agency">merch</a>
             </div>
         </nav>
 
@@ -34,9 +50,21 @@
 
         <section class="home-posts">
             
+                <a class="home-post-item" href="/2023/06/07/hello.html">
+                    <img class="home-post-img" src="/assets/uploads/abstract16.png">
+                    <div class="home-post-info">
+                        <div class="home-post-left">
+                            <p class="home-post-title">Hello</p>
+                            <p class="home-post-preview">Preeeviewwwww</p>
+                        </div>
+                        <p class="home-post-date">07/06/23</p>
+                    </div>
+                </a>
+            
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script> 
+        <script src="/scripts/themes.js"></script>
         <script src="/scripts/index.js"></script>
     </body>
 </html>

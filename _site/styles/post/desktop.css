@@ -1,0 +1,27 @@
+.post-container{
+    max-width: 800px;
+    margin: 125px auto;
+}
+
+.post-info-banner{
+    width: 800px;
+    border-radius: 26px;
+}
+
+.post-info-title{
+    font-size: 64px;
+    letter-spacing: -7%;
+    line-height: 90%;
+    font-weight: 300;
+
+    margin: 20px auto;
+}
+
+.post-content{
+    font-size: 20px;
+    letter-spacing: -6%;
+}
+
+.post-content p{
+    margin-bottom: 1.2em;
+}
