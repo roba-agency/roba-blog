@@ -43,7 +43,7 @@
 
         <div class="post-container">
             <div class="post-info">
-                <img class="post-info-banner" src="{{ page.banner }}">
+                <img class="post-info-banner" src="{{ page.banner | prepend: site.baseurl}}">
                 <h1 class="post-info-title">{{ page.title }}</h1>
             </div>
 

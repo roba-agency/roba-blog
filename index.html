@@ -47,14 +47,14 @@ title: roba-blog
             <h1 class="home-landing-title">The future is just a click away</h1>
             <p class="home-landing-text">The blog for tech enthusiasts, by tech enthusiasts</p>
 
-            <img class="home-shape-orange" src="/assets/site_assets/home-shape-orange.png">
-            <img class="home-shape-purple" src="/assets/site_assets/home-shape-purple.png">
+            <img class="home-shape-orange" src="{{ site.baseurl }}/assets/site_assets/home-shape-orange.png">
+            <img class="home-shape-purple" src="{{ site.baseurl }}/assets/site_assets/home-shape-purple.png">
         </section>
 
         <section class="home-posts">
             {% for post in site.posts %}
-                <a class="home-post-item" href="{{ post.url }}">
-                    <img class="home-post-img" src="{{ post.banner }}">
+                <a class="home-post-item" href="{{ post.url | prepend: site.baseurl}}">
+                    <img class="home-post-img" src="{{ post.banner | prepend: site.baseurl}}">
                     <div class="home-post-info">
                         <div class="home-post-left">
                             <p class="home-post-title">{{ post.title }}</p>
