@@ -40,24 +40,27 @@ function updateTheme(theme) {
     
     let navbarLogo = document.getElementsByClassName("navbar-desktop-logo")[0]
     let navbarText = document.getElementsByClassName("navbar-desktop-theme")[0]
-    let themeBorder = document.getElementsByClassName("navbar-desktop-theme-dropdown")[0]
+    let themeDropdown = document.getElementsByClassName("navbar-desktop-theme-dropdown")[0]
+
+    
 
     if (window.location.pathname != "/") {
+        navbarLogo.style.color = themeColours[theme]["text-colour"]
+        navbarText.style.color = themeColours[theme]["text-colour"]
 
         if (themeColours[theme]["type"] == "light") {
-            navbarLogo.style.color = themeColours[theme]["text-colour"]
-            navbarText.style.color = themeColours[theme]["text-colour"]
-            themeBorder.style.boxShadow = "1px 1px 2px #00000020, -1px -1px 2px #00000040"
-            
+            themeDropdown.style.boxShadow = "1px 1px 2px #00000020, -1px -1px 2px #00000040"
         }
 
         else if (themeColours[theme]["type"] == "dark") {
-            navbarLogo.style.color = themeColours[theme]["text-colour"]
-            navbarText.style.color = themeColours[theme]["text-colour"]
-            themeBorder.style.boxShadow = "1px 1px 2px #ffffff20, -1px -1px 2px #ffffff40"
+            themeDropdown.style.boxShadow = "1px 1px 2px #ffffff20, -1px -1px 2px #ffffff40"
         }
 
-    }   
+    } 
+    
+    else {
+        themeDropdown.style.background = "#1b1b1b"
+    }
 
     highlightOption(theme)
 
@@ -185,11 +188,8 @@ let themePicker = document.getElementsByClassName("navbar-theme-colour-options")
 for (let themes in themeColours) {  
     var option = document.createElement("div")
 
-    option.style.width = "35px"
-    option.style.height = "35px"
+    option.classList.add("theme-option")
     option.style.background = themeColours[themes]["bg-colour"]
-    option.style.borderRadius = "100px"
-    option.style.cursor = "pointer"
     option.title = themes
     option.onclick = () => setTheme(themes)
     option.onmouseover = () => updateThemePreview(themes)
