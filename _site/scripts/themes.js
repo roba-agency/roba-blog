@@ -44,7 +44,7 @@ function updateTheme(theme) {
 
     
 
-    if (window.location.pathname != "/") {
+    if (window.location.pathname != "/blog/" || window.location.pathname != "/blog") {
         navbarLogo.style.color = themeColours[theme]["text-colour"]
         navbarText.style.color = themeColours[theme]["text-colour"]
 
