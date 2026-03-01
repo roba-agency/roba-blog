@@ -28,8 +28,8 @@ var theme, currentFont
 var fontList = [
     "Inter",
     "Roboto",
-    "Space Grotesk",
-    "JetBrains Mono"
+    "Noto Sans",
+    "IBM Plex Serif"
 ]
 
 function updateTheme(theme) {
