@@ -32,6 +32,20 @@ var fontList = [
     "IBM Plex Serif"
 ]
 
+var themeMenuOpen = false
+
+function toggleThemeMenu() {
+    let dropdown = document.getElementsByClassName("navbar-desktop-theme-dropdown")[0]
+    dropdown.classList.add('navbar-desktop-theme-dropdown-active')
+}
+
+window.onclick = function(event) {
+  if (!event.target.closest('.navbar-desktop-theme') && !event.target.closest('.navbar-desktop-theme-dropdown')) {
+    let dropdown = document.getElementsByClassName("navbar-desktop-theme-dropdown")[0];
+    dropdown.classList.remove('navbar-desktop-theme-dropdown-active')
+  }
+} 
+
 function updateTheme(theme) {
     var root = document.querySelector(':root');
 
@@ -184,6 +198,7 @@ function updateFontPreview(font) {
     preview.style.fontFamily = font
 }
 
+
 let themePicker = document.getElementsByClassName("navbar-theme-colour-options")[0]
 for (let themes in themeColours) {  
     var option = document.createElement("div")
@@ -198,6 +213,7 @@ for (let themes in themeColours) {
 
     themePicker.appendChild(option)
 }
+
 
 addFontsToOptions()
 

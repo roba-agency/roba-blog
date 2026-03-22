@@ -52,6 +52,10 @@
     padding-bottom: 50px;
 }
 
+.navbar-desktop-theme:hover{
+    cursor: pointer;
+}
+
 .navbar-desktop-theme-dropdown {
     display: none;
     position: absolute;
@@ -66,8 +70,7 @@
 
 
 
-.navbar-desktop-theme-container:hover .navbar-desktop-theme-dropdown,
-.navbar-desktop-theme-dropdown:hover {
+.navbar-desktop-theme-dropdown-active {
     display: flex;
     flex-direction: row;
     justify-content: center;
