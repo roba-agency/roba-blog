@@ -7,17 +7,20 @@
     <title>admin | roba-blog</title>
 
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <link href="/blog/admin/config.yml" type="text/yaml" rel="cms-config-url" />
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
     <script>
+        if (location.hostname != "roba-blog.netlify.app" && location.hostname != "localhost") {
+            location.href = "https://roba-blog.netlify.app/admin/";
+        }
+
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", (user) => {
             if (!user) {
                 window.netlifyIdentity.on("login", () => {
-                document.location.href = "/blog/admin/";
+                document.location.href = "/admin/";
                 });
             }
             });
