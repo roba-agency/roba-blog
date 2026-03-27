@@ -16,3 +16,8 @@ body{
 .post-container{
     font-family: var(--font-family);
 }
+
+.post-container a{
+    color: var(--text-colour) !important;
+    text-decoration: underline;
+}
