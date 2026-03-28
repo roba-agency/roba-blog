@@ -27,9 +27,9 @@ const themeColours = {
 var theme, currentFont
 var fontList = [
     "Inter",
-    "Roboto",
-    "Noto Sans",
-    "IBM Plex Serif"
+    "IBM Plex Serif",
+    "JetBrains Mono",
+    "Space Grotesk",
 ]
 
 var themeMenuOpen = false
